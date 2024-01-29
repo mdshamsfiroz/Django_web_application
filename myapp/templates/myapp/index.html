@@ -1,0 +1,24 @@
+<!-- myapp/templates/myapp/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django App</title>
+    <!-- <style>
+        body {
+            background-image: url('https://unsplash.com/photos/yellow-and-white-color-illustration-YIy1cd3xN4w');
+            background-size: cover;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Items List</h1>
+    <ul>
+    {% for item in items %}
+        <li>{{ item.name }} - {{ item.description }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
